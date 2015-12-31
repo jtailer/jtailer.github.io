@@ -81,12 +81,6 @@
     version    : 'v2.1' // use version 2.1
   });
 
-
-  FB.Event.subscribe('auth.login', function(){
-    window.location.href = 'index.html';
-  });
-
-
   // These three cases are handled in the callback function.
   FB.getLoginStatus(function(response) {
     statusChangeCallback(response);
